@@ -140,33 +140,135 @@
 
 @media (max-width: 720px) {
   .hero {
-    min-height: 92svh;
+    min-height: min(88svh, 720px);
+    align-items: end;
   }
 
   .hero::before {
     animation: none;
-    background-position: center center;
+    background-position: center 40%;
     inset: 0;
   }
 
   .hero-veil {
     background: linear-gradient(
       180deg,
-      rgba(32, 22, 20, 0.15) 0%,
-      rgba(32, 22, 20, 0.08) 40%,
-      rgba(32, 22, 20, 0.4) 72%,
-      rgba(32, 22, 20, 0.68) 100%
+      rgba(20, 14, 12, 0.45) 0%,
+      rgba(20, 14, 12, 0.25) 28%,
+      rgba(20, 14, 12, 0.55) 58%,
+      rgba(20, 14, 12, 0.88) 100%
     );
   }
 
   .hero-content {
     width: auto;
-    margin: 0 1rem;
-    padding: 4rem 0 5.5rem;
+    max-width: none;
+    margin: 0;
+    padding: 1.25rem 1.1rem calc(1.5rem + var(--mobile-cta-h));
+  }
+
+  .hero-brand {
+    font-size: 1.45rem;
+    margin-bottom: 0.3rem;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+  }
+
+  .hero-location {
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    line-height: 1.35;
+    margin-bottom: 0.65rem;
+    max-width: 100%;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
   }
 
   .hero h1 {
-    max-width: 12ch;
+    font-size: 1.85rem;
+    max-width: 14ch;
+    margin-bottom: 0.65rem;
+    line-height: 1.15;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55);
+  }
+
+  .hero-lead {
+    font-size: 0.92rem;
+    line-height: 1.45;
+    max-width: 100%;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.55rem;
+    margin-top: 1.15rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    min-height: 46px;
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .section {
+    padding: 2.75rem 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    max-width: 16ch;
+  }
+
+  .section-lead {
+    font-size: 0.95rem;
+  }
+
+  .about-visual img {
+    aspect-ratio: 5 / 4;
+  }
+
+  .portfolio-meta h3 {
+    font-size: 1.2rem;
+  }
+
+  .package-body {
+    padding: 1.15rem;
+  }
+
+  .package-body h3 {
+    font-size: 1.4rem;
+  }
+
+  .testimonial-card p {
+    font-size: 1.1rem;
+  }
+
+  .cta-band-inner h2 {
+    font-size: 1.65rem;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+  }
+
+  .contact-actions .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-brand {
+    font-size: 1.3rem;
+  }
+
+  .hero h1 {
+    font-size: 1.65rem;
+  }
+
+  .hero-location {
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
   }
 }
 
