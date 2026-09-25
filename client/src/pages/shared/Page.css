@@ -387,6 +387,70 @@
   color: var(--muted);
 }
 
+@media (max-width: 699px) {
+  .page-hero {
+    padding: 2rem 0 0.75rem;
+  }
+
+  .page-hero h1 {
+    font-size: 1.85rem;
+    max-width: 14ch;
+  }
+
+  .section-lead {
+    font-size: 0.95rem;
+  }
+
+  .prose {
+    font-size: 0.98rem;
+  }
+
+  .service-row {
+    gap: 0.85rem;
+    padding: 1.25rem 0;
+  }
+
+  .service-row h2 {
+    font-size: 1.35rem;
+  }
+
+  .service-num {
+    font-size: 1.2rem;
+  }
+
+  .filter-btn {
+    font-size: 0.8rem;
+    padding: 0.45rem 0.8rem;
+  }
+
+  .event-card-body h2 {
+    font-size: 1.25rem;
+  }
+
+  .event-detail h1 {
+    font-size: 1.85rem;
+  }
+
+  .enquire-form,
+  .enquire-aside {
+    padding: 1.1rem;
+  }
+
+  .enquire-aside h2 {
+    font-size: 1.35rem;
+  }
+
+  .pkg-page-card h2 {
+    font-size: 1.55rem;
+  }
+
+  .lightbox-close,
+  .lightbox-nav {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.85rem;
+  }
+}
+
 @media (min-width: 700px) {
   .events-grid {
     grid-template-columns: repeat(2, 1fr);
